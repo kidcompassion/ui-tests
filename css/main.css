@@ -1,0 +1,131 @@
+/* line 3, ../scss/main.scss */
+header {
+  background-image: url("../img/header.png");
+  background-repeat: no-repeat;
+  height: 560px;
+}
+
+/* line 12, ../scss/main.scss */
+.navbar-default {
+  background-image: none !important;
+  background-color: #00539C !important;
+}
+/* line 15, ../scss/main.scss */
+.navbar-default li {
+  width: 180px;
+  text-align: center;
+  color: #fff !important;
+}
+/* line 19, ../scss/main.scss */
+.navbar-default li a {
+  color: #fff !important;
+}
+/* line 25, ../scss/main.scss */
+.navbar-default .active a {
+  color: #777 !important;
+}
+
+/* line 32, ../scss/main.scss */
+h1 {
+  font-size: 18px;
+}
+
+/* line 36, ../scss/main.scss */
+h2 {
+  font-size: 14px;
+}
+
+/* line 40, ../scss/main.scss */
+.deal-row-wrapper {
+  position: relative;
+}
+
+/* line 45, ../scss/main.scss */
+.deal-row {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 49, ../scss/main.scss */
+.deal-row ul {
+  position: relative;
+  width: 99999px;
+}
+/* line 53, ../scss/main.scss */
+.deal-row ul li {
+  border: solid 1px #e5e5e5;
+  padding: 20px;
+  list-style-type: none;
+  width: 390px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 67, ../scss/main.scss */
+.right-arrow {
+  position: absolute;
+  top: 125px;
+  right: 40px;
+  font-size: 50px;
+  height: 50px;
+  z-index: 100;
+}
+
+/* line 76, ../scss/main.scss */
+.left-arrow {
+  position: absolute;
+  top: 125px;
+  left: 10px;
+  font-size: 50px;
+  height: 50px;
+  z-index: 100;
+}
+
+/* line 85, ../scss/main.scss */
+.show {
+  display: block;
+}
+
+/* line 89, ../scss/main.scss */
+.details {
+  display: none;
+}
+/* line 91, ../scss/main.scss */
+.details ul {
+  width: auto;
+}
+/* line 93, ../scss/main.scss */
+.details ul li {
+  clear: both;
+  padding: 0;
+  border: none;
+  list-style-type: circle;
+}
+
+/*MODAL*/
+/* line 105, ../scss/main.scss */
+.modalPopup {
+  display: none;
+  position: fixed;
+  top: 10px;
+  z-index: 600;
+  width: 340px;
+  border: solid 1px gray;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* line 117, ../scss/main.scss */
+.bg {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  z-index: 500;
+}
