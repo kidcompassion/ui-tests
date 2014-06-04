@@ -1,56 +1,88 @@
 /* line 3, ../scss/main.scss */
 header {
-  background-image: url("../img/header.png");
+  background-image: url("../img/top-nav.jpg");
   background-repeat: no-repeat;
-  height: 560px;
+  height: 205px;
 }
 
-/* line 12, ../scss/main.scss */
+/* line 9, ../scss/main.scss */
+.deal-of-the-week {
+  background: #999;
+  color: #fff;
+  text-align: center;
+  line-height: 48px;
+  position: relative;
+}
+/* line 15, ../scss/main.scss */
+.deal-of-the-week span {
+  font-size: 16px;
+}
+
+/* line 20, ../scss/main.scss */
+.banner {
+  background: #99CCFF;
+  padding: 100px 0px 70px 0px;
+}
+/* line 23, ../scss/main.scss */
+.banner h1 {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 29, ../scss/main.scss */
+.banner .tst {
+  background-color: orange;
+  width: 70%;
+  margin: 60px auto 0px auto;
+  height: 80px;
+}
+
+/* line 37, ../scss/main.scss */
 .navbar-default {
   background-image: none !important;
   background-color: #00539C !important;
 }
-/* line 15, ../scss/main.scss */
+/* line 40, ../scss/main.scss */
 .navbar-default li {
   width: 180px;
   text-align: center;
   color: #fff !important;
 }
-/* line 19, ../scss/main.scss */
+/* line 44, ../scss/main.scss */
 .navbar-default li a {
   color: #fff !important;
 }
-/* line 25, ../scss/main.scss */
+/* line 50, ../scss/main.scss */
 .navbar-default .active a {
   color: #777 !important;
 }
 
-/* line 32, ../scss/main.scss */
+/* line 57, ../scss/main.scss */
 h1 {
+  font-size: 24px;
+}
+
+/* line 61, ../scss/main.scss */
+h2 {
   font-size: 18px;
 }
 
-/* line 36, ../scss/main.scss */
-h2 {
-  font-size: 14px;
-}
-
-/* line 40, ../scss/main.scss */
+/* line 65, ../scss/main.scss */
 .deal-row-wrapper {
   position: relative;
 }
 
-/* line 45, ../scss/main.scss */
+/* line 74, ../scss/main.scss */
 .deal-row {
   width: 100%;
   overflow: hidden;
 }
-/* line 49, ../scss/main.scss */
+/* line 78, ../scss/main.scss */
 .deal-row ul {
   position: relative;
   width: 99999px;
 }
-/* line 53, ../scss/main.scss */
+/* line 82, ../scss/main.scss */
 .deal-row ul li {
   border: solid 1px #e5e5e5;
   padding: 20px;
@@ -59,8 +91,13 @@ h2 {
   float: left;
   margin-right: 10px;
 }
+/* line 89, ../scss/main.scss */
+.deal-row ul li img {
+  max-width: 200px;
+  height: 100px;
+}
 
-/* line 67, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 .right-arrow {
   position: absolute;
   top: 125px;
@@ -70,7 +107,7 @@ h2 {
   z-index: 100;
 }
 
-/* line 76, ../scss/main.scss */
+/* line 109, ../scss/main.scss */
 .left-arrow {
   position: absolute;
   top: 125px;
@@ -80,20 +117,20 @@ h2 {
   z-index: 100;
 }
 
-/* line 85, ../scss/main.scss */
+/* line 118, ../scss/main.scss */
 .show {
   display: block;
 }
 
-/* line 89, ../scss/main.scss */
+/* line 122, ../scss/main.scss */
 .details {
   display: none;
 }
-/* line 91, ../scss/main.scss */
+/* line 124, ../scss/main.scss */
 .details ul {
   width: auto;
 }
-/* line 93, ../scss/main.scss */
+/* line 126, ../scss/main.scss */
 .details ul li {
   clear: both;
   padding: 0;
@@ -102,22 +139,21 @@ h2 {
 }
 
 /*MODAL*/
-/* line 105, ../scss/main.scss */
+/* line 138, ../scss/main.scss */
 .modalPopup {
   display: none;
   position: fixed;
   top: 10px;
   z-index: 600;
-  width: 340px;
+  width: 540px;
   border: solid 1px gray;
   background-color: #fff;
   padding: 20px;
 }
 
-/* line 117, ../scss/main.scss */
+/* line 150, ../scss/main.scss */
 .bg {
   position: fixed;
-  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;

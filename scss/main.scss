@@ -1,13 +1,38 @@
 
 
 header {
-	background-image: url('../img/header.png');
+	background-image: url('../img/top-nav.jpg');
 	background-repeat: no-repeat;
-	height: 560px;
+	height: 205px;
 }
 
+.deal-of-the-week{
+	background: #999;
+	color: #fff;
+	text-align: center;
+	line-height: 48px;
+	position: relative;
+	span {
+		font-size: 16px;
+	}
+}
 
-
+.banner {
+	background: #99CCFF;
+	padding: 100px 0px 70px 0px;
+	h1 {
+		text-align: center;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.tst {
+		background-color: orange;
+		width: 70%;
+		margin: 60px auto 0px auto;
+		height: 80px;
+	}
+}
 
 .navbar-default {
 	background-image: none !important;
@@ -30,11 +55,11 @@ header {
 
 
 h1 {
-	font-size: 18px;
+	font-size: 24px;
 }
 
 h2 {
-	font-size: 14px;
+	font-size: 18px;
 }
 
 .deal-row-wrapper {
@@ -42,6 +67,10 @@ h2 {
 	position: relative;
 	
 }
+
+
+
+
 .deal-row {
 	width: 100%;
 	overflow: hidden;
@@ -57,6 +86,10 @@ h2 {
 			width: 390px;
 			float: left;
 			margin-right: 10px;
+			img {
+				max-width: 200px;
+				height: 100px;
+			}
 
 		}
 	}
@@ -107,7 +140,7 @@ h2 {
 	position: fixed;
 	top: 10px;
 	z-index: 600;
-	width: 340px;
+	width: 540px;
 	border: solid 1px gray;
 	background-color: #fff;
 	padding: 20px;
@@ -116,7 +149,6 @@ h2 {
 //lightbox bg
 .bg {
   position: fixed;
-	overflow:hidden;
      top: 0;
      left: 0;
      width: 100%;

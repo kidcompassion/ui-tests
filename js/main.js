@@ -38,10 +38,12 @@ jQuery(document).ready(function(){
 				
 			});
 			jQuery(value).find('.modalPopup').toggleClass('show');
+			jQuery('body').css('overflow', 'hidden');
 		});
 		jQuery(value).find('.closeModal').click(function(){
 			jQuery(value).find('.modalPopup').removeClass('show');
 			jQuery('.bg').remove();
+			jQuery('body').css('overflow', 'auto');
 		});
 	});
 	
