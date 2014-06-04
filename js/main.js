@@ -1,4 +1,16 @@
 jQuery(document).ready(function(){
+	
+
+	//NAV
+	jQuery('.dropdown ul li').hover(
+		function(){
+			$(this).find('ul').show();
+		}, 	function(){
+			$(this).find('ul').hide();
+		}
+	
+	);
+
 
 	//ACCORDION
 
@@ -55,12 +67,13 @@ jQuery(document).ready(function(){
 	
 	//CAROUSEL
 	jQuery('.deal-row-wrapper').each(function(index, value){
-	
+
 		//click the right arrow, and it moves the images to the right
 		jQuery(value).find('.right-arrow').click(function(){
 			jQuery(value).find('.deal-row ul').animate({
 				right: "+=390"
 				}, 500, function() {
+					jQuery(value).find('.deal-row ul .deal:last').before(jQuery('.deal-row ul .deal:first'));
 			});
 		});
 	
@@ -69,6 +82,7 @@ jQuery(document).ready(function(){
 			jQuery(value).find('.deal-row ul').animate({
 				right: "-=390"
 				}, 500, function() {
+				jQuery(value).find('.deal-row ul .deal:first').before(jQuery('.deal-row ul .deal:last'));
 			});
 		});
 	

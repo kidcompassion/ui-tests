@@ -10,15 +10,8 @@ jQuery(document).ready(function(){
           tag: '#tst-widget',
 
           // Products: ALL, flight, car, hotel, activity
-          products: ['flight', 'hotel', 'car', 'activity','packages', 'cruises', 'insurance'],
+          products: ['flight'],
 
-          // Custom Product Options - you can add your own functionality to the widget here
-          productOptions: {
-            'packages': {url: "http://google.com", content: true},
-            'cruises': { content: true},
-            'activities':{url: "https://amatravel.tstllc.net/activity/", content:true},
-			'insurance':{ url: "https://www.orioninsurance.ca/AMA/TravelInsurance.aspx?Partner=AMA", content:true }
-          },
 
           // this is the "selected" or "active" tab when the widget initializes.
           focus: 'cruises',

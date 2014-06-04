@@ -1,11 +1,86 @@
 /* line 3, ../scss/main.scss */
-header {
-  background-image: url("../img/top-nav.jpg");
-  background-repeat: no-repeat;
-  height: 205px;
+.site-header {
+  background: #00205b;
+  color: #fff;
+}
+/* line 6, ../scss/main.scss */
+.site-header .utility {
+  float: right;
+  padding: 10px;
+}
+/* line 10, ../scss/main.scss */
+.site-header .utility li {
+  list-style-type: none;
+  float: left;
+  margin: 0 10px;
+}
+/* line 17, ../scss/main.scss */
+.site-header .main-nav {
+  width: 100%;
+  height: 140px;
+  padding-top: 20px;
+}
+/* line 21, ../scss/main.scss */
+.site-header .main-nav .ama-logo {
+  padding-top: 50px;
+  padding-left: 20px;
+  width: 12%;
+  float: left;
+}
+/* line 26, ../scss/main.scss */
+.site-header .main-nav .ama-logo img {
+  max-width: 100%;
+}
+/* line 30, ../scss/main.scss */
+.site-header .main-nav .dropdown {
+  width: 75%;
+  padding-top: 40px;
+  float: left;
+}
+/* line 35, ../scss/main.scss */
+.site-header .main-nav .dropdown ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  float: left;
+  font-size: 20px;
+  margin: 10px 20px;
+}
+/* line 41, ../scss/main.scss */
+.site-header .main-nav .dropdown ul li .sub-member, .site-header .main-nav .dropdown ul li .sub-travel, .site-header .main-nav .dropdown ul li .sub-insurance, .site-header .main-nav .dropdown ul li .sub-auto, .site-header .main-nav .dropdown ul li .sub-reg, .site-header .main-nav .dropdown ul li .sub-all {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: 99999;
+  background: #00205b;
+}
+/* line 48, ../scss/main.scss */
+.site-header .main-nav .dropdown ul li .sub-member .first-li, .site-header .main-nav .dropdown ul li .sub-travel .first-li, .site-header .main-nav .dropdown ul li .sub-insurance .first-li, .site-header .main-nav .dropdown ul li .sub-auto .first-li, .site-header .main-nav .dropdown ul li .sub-reg .first-li, .site-header .main-nav .dropdown ul li .sub-all .first-li {
+  border-bottom: 1px solid #fff;
+  width: 97%;
+  clear: both;
+}
+/* line 53, ../scss/main.scss */
+.site-header .main-nav .dropdown ul li .sub-member .column, .site-header .main-nav .dropdown ul li .sub-member .column, .site-header .main-nav .dropdown ul li .sub-member .column, .site-header .main-nav .dropdown ul li .sub-travel .column, .site-header .main-nav .dropdown ul li .sub-travel .column, .site-header .main-nav .dropdown ul li .sub-travel .column, .site-header .main-nav .dropdown ul li .sub-insurance .column, .site-header .main-nav .dropdown ul li .sub-insurance .column, .site-header .main-nav .dropdown ul li .sub-insurance .column, .site-header .main-nav .dropdown ul li .sub-auto .column, .site-header .main-nav .dropdown ul li .sub-auto .column, .site-header .main-nav .dropdown ul li .sub-auto .column, .site-header .main-nav .dropdown ul li .sub-reg .column, .site-header .main-nav .dropdown ul li .sub-reg .column, .site-header .main-nav .dropdown ul li .sub-reg .column, .site-header .main-nav .dropdown ul li .sub-all .column, .site-header .main-nav .dropdown ul li .sub-all .column, .site-header .main-nav .dropdown ul li .sub-all .column {
+  width: 20%;
+  float: left;
+}
+/* line 57, ../scss/main.scss */
+.site-header .main-nav .dropdown ul li .sub-member li, .site-header .main-nav .dropdown ul li .sub-travel li, .site-header .main-nav .dropdown ul li .sub-insurance li, .site-header .main-nav .dropdown ul li .sub-auto li, .site-header .main-nav .dropdown ul li .sub-reg li, .site-header .main-nav .dropdown ul li .sub-all li {
+  clear: both;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 5px 0px;
+}
+/* line 68, ../scss/main.scss */
+.site-header .main-nav .search-box {
+  width: 6%;
+  float: left;
+  margin-left: 10px;
+  margin-top: 70px;
 }
 
-/* line 9, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 .deal-of-the-week {
   background: #999;
   color: #fff;
@@ -13,91 +88,154 @@ header {
   line-height: 48px;
   position: relative;
 }
-/* line 15, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 .deal-of-the-week span {
   font-size: 16px;
 }
 
-/* line 20, ../scss/main.scss */
+/* line 91, ../scss/main.scss */
 .banner {
-  background: #99CCFF;
+  background-image: url("../img/flight.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 100px 0px 70px 0px;
 }
-/* line 23, ../scss/main.scss */
+/* line 96, ../scss/main.scss */
 .banner h1 {
   text-align: center;
   margin: 0px;
   padding: 0px;
 }
-/* line 29, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 .banner .tst {
-  background-color: orange;
+  background-color: #fff;
   width: 70%;
   margin: 60px auto 0px auto;
-  height: 80px;
+}
+/* line 109, ../scss/main.scss */
+.banner .tst .title-and-logo {
+  background-color: orange;
+  padding: 20px;
+  float: left;
+  width: 100px;
+}
+/* line 116, ../scss/main.scss */
+.banner .tst form {
+  position: relative;
+  overflow: hidden;
+}
+/* line 119, ../scss/main.scss */
+.banner .tst form .grouped {
+  padding: 20px;
+  float: left;
+}
+/* line 122, ../scss/main.scss */
+.banner .tst form .grouped label {
+  width: 80px;
+}
+/* line 126, ../scss/main.scss */
+.banner .tst form .search-btn {
+  overflow: hidden;
+  padding: 20px 40px;
+}
+/* line 129, ../scss/main.scss */
+.banner .tst form .search-btn button {
+  background-color: orange;
+  color: #fff;
+  padding: 10px 45px;
+}
+/* line 135, ../scss/main.scss */
+.banner .tst form .tst-advanced-search {
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 
-/* line 37, ../scss/main.scss */
+/* line 148, ../scss/main.scss */
 .navbar-default {
   background-image: none !important;
   background-color: #00539C !important;
 }
-/* line 40, ../scss/main.scss */
+/* line 151, ../scss/main.scss */
 .navbar-default li {
   width: 180px;
   text-align: center;
   color: #fff !important;
 }
-/* line 44, ../scss/main.scss */
+/* line 155, ../scss/main.scss */
 .navbar-default li a {
   color: #fff !important;
 }
-/* line 50, ../scss/main.scss */
+/* line 161, ../scss/main.scss */
 .navbar-default .active a {
   color: #777 !important;
 }
 
-/* line 57, ../scss/main.scss */
+/* line 168, ../scss/main.scss */
 h1 {
   font-size: 24px;
 }
 
-/* line 61, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 h2 {
   font-size: 18px;
 }
 
-/* line 65, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 .deal-row-wrapper {
   position: relative;
 }
 
-/* line 74, ../scss/main.scss */
+/* line 181, ../scss/main.scss */
+.last-card {
+  background-color: orange;
+  padding-bottom: 100px !important;
+}
+/* line 184, ../scss/main.scss */
+.last-card a {
+  color: #fff;
+}
+
+/* line 189, ../scss/main.scss */
 .deal-row {
   width: 100%;
   overflow: hidden;
 }
-/* line 78, ../scss/main.scss */
+/* line 193, ../scss/main.scss */
 .deal-row ul {
   position: relative;
   width: 99999px;
 }
-/* line 82, ../scss/main.scss */
+/* line 197, ../scss/main.scss */
 .deal-row ul li {
   border: solid 1px #e5e5e5;
   padding: 20px;
   list-style-type: none;
-  width: 390px;
+  width: 265px;
   float: left;
   margin-right: 10px;
 }
-/* line 89, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 .deal-row ul li img {
   max-width: 200px;
   height: 100px;
 }
+/* line 209, ../scss/main.scss */
+.deal-row ul li .left-details {
+  float: left;
+}
+/* line 211, ../scss/main.scss */
+.deal-row ul li .left-details p {
+  float: left;
+}
+/* line 216, ../scss/main.scss */
+.deal-row ul li .right-details {
+  float: right;
+  padding: 0px 10px;
+}
 
-/* line 100, ../scss/main.scss */
+/* line 227, ../scss/main.scss */
 .right-arrow {
   position: absolute;
   top: 125px;
@@ -107,7 +245,7 @@ h2 {
   z-index: 100;
 }
 
-/* line 109, ../scss/main.scss */
+/* line 236, ../scss/main.scss */
 .left-arrow {
   position: absolute;
   top: 125px;
@@ -117,20 +255,20 @@ h2 {
   z-index: 100;
 }
 
-/* line 118, ../scss/main.scss */
+/* line 245, ../scss/main.scss */
 .show {
   display: block;
 }
 
-/* line 122, ../scss/main.scss */
+/* line 249, ../scss/main.scss */
 .details {
   display: none;
 }
-/* line 124, ../scss/main.scss */
+/* line 251, ../scss/main.scss */
 .details ul {
   width: auto;
 }
-/* line 126, ../scss/main.scss */
+/* line 253, ../scss/main.scss */
 .details ul li {
   clear: both;
   padding: 0;
@@ -139,7 +277,7 @@ h2 {
 }
 
 /*MODAL*/
-/* line 138, ../scss/main.scss */
+/* line 265, ../scss/main.scss */
 .modalPopup {
   display: none;
   position: fixed;
@@ -151,7 +289,7 @@ h2 {
   padding: 20px;
 }
 
-/* line 150, ../scss/main.scss */
+/* line 277, ../scss/main.scss */
 .bg {
   position: fixed;
   top: 0;
