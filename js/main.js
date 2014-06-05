@@ -71,9 +71,9 @@ jQuery(document).ready(function(){
 		//click the right arrow, and it moves the images to the right
 		jQuery(value).find('.right-arrow').click(function(){
 			jQuery(value).find('.deal-row ul').animate({
-				right: "+=390"
+				right: "+=255"
 				}, 500, function() {
-					jQuery(value).find('.deal-row ul .deal:last').before(jQuery('.deal-row ul .deal:first'));
+
 			});
 		});
 	
@@ -82,15 +82,13 @@ jQuery(document).ready(function(){
 			jQuery(value).find('.deal-row ul').animate({
 				right: "-=390"
 				}, 500, function() {
-				jQuery(value).find('.deal-row ul .deal:first').before(jQuery('.deal-row ul .deal:last'));
+
 			});
 		});
 	
 	
 	});
-	
 
-	
 	
 	
 	
